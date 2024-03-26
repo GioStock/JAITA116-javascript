@@ -42,7 +42,6 @@ input {
 	border-radius: 6px;
 	border: none;
 }
-<<<<<<< HEAD
 button, .btn{
 	color: #191414;
 	background-color: #1db954;
@@ -77,47 +76,10 @@ ul{
 }
 
 li{
-=======
-
-button,
-.btn {
-	color: #191414;
-	background-color: #1db954;
-	border: 1px solid #1db954;
-	border-radius: 6px;
-	padding: 0.79rem 1rem;
-	cursor: pointer;
-	transition: all 0.2s ease-in-out;
-}
-
-button:hover,
-.btn:hover {
-	color: #ffffff;
-	background-color: #16873e;
-	border-color: #16873e;
-}
-
-#btnStampaPlaylist {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
-
-#feedback {
-	color: #b9341d;
-}
-
-ul {
-	list-style: none;
-	padding-left: 0;
-}
-
-li {
->>>>>>> 51a67226d44fe123b38e410f039ca2ed59277830
 	display: flex;
 	column-gap: 1rem;
 	align-items: center;
 	margin-bottom: 1rem;
-<<<<<<< HEAD
 	text-transform: capitalize;
 }
 li span{
@@ -125,10 +87,3 @@ li span{
 	color: #0e692e;
 	font-weight: 900;
 }
-=======
-}
-
-li span {
-	flex: 1;
-}
->>>>>>> 51a67226d44fe123b38e410f039ca2ed59277830
