@@ -50,7 +50,11 @@ class Canzone {
     }
 
     stampaCanzone() {
+<<<<<<< HEAD
         let infoCanzone = `<span>${this.titolo}</span> <span> ${this.album}</span> <span>${this.artista}</span> <a class="btn" href="${this.linkYT}" target="_blank">Ascolta su YouTube</a>`;
+=======
+        let infoCanzone = `<span>${this.titolo}</span> <span>${this.album}</span> <span>${this.artista}</span> <a class="btn" href="${this.linkYT}" target="_blank">Ascolta su YouTube</a>`;
+>>>>>>> 51a67226d44fe123b38e410f039ca2ed59277830
         return infoCanzone;
     }
 }
