@@ -27,6 +27,7 @@ let elPlaylist = document.getElementById('playlist');
 console.log(miaPlaylist[0].ottieniInfo());
 
 function stampaCanzoni() {
+     elPlaylist.innerHTML = "";
     miaPlaylist.forEach(canzone => {
         elPlaylist.innerHTML += `<div class="box-canzone">
                                     <p>Titolo: ${canzone.titolo}</p>
@@ -42,3 +43,31 @@ stampaCanzoni();
 /* 
     Far inserire all'utente una nuova canzone attraverso un form e visualizza la playlist aggiornata.
 */
+
+let bottone = document
+  .getElementById("bottone")
+  .addEventListener("click", aggiungiCanzone);
+function aggiungiCanzone() {
+  let titolo = document.getElementById("titolo");
+  let artista = document.getElementById("artista");
+  let durata = document.getElementById("durata");
+  let genere = document.getElementById("genere");
+
+  let canzone = new Canzone(
+    titolo.value,
+    artista.value,
+    Number(durata.value),
+    genere.value
+  );
+
+  if ((titolo.value, artista.value, durata.value, genere.value) == "") {
+    alert("inserire i campi vuoti");
+  } else {
+    miaPlaylist.push(canzone);
+    stampaCanzoni();
+  }
+  titolo.value = "";
+  artista.value = "";
+  durata.value = "";
+  genere.value = "";
+}
